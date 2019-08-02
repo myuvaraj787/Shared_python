@@ -1,0 +1,25 @@
+#a={'a':90,'b':280}
+
+
+a=dict(input().split() for _ in range(5))
+
+
+print(a.items())
+print(a.keys())
+
+for x in a.keys():
+	#print('student ',x)
+	mark=int(a[x]);
+	#print('mark',mark)
+	if mark >90:
+		print('Student ',x,'grade A')
+	elif mark >80 and mark <=90:
+		print('Student ',x,'grade B')
+	elif mark >70 and mark <=80:
+		print('Student ',x,'grade C')
+	elif mark >60 and mark <=70:
+		print('Student ',x,'grade D')
+	else:
+		print('Student ',x,'grade F')
+		
+	
